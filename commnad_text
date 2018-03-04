@@ -1,1 +1,6 @@
 curl --http1.0 http://localhost:18888/greeting
+curl --http1.0 --get --data-urlencode search word http://localhost:18888
+curl --http1.0 -v http://localhost:18888/greeting
+curl --http1.0 -H X-Test: Hello http://localhost:18888
+curl -v --http1.0 -A Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0) http://localhost:18888
+curl --http1.0 -X POST http://localhost:18888/greeting
